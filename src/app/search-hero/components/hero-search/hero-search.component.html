@@ -1,0 +1,53 @@
+<div class="container">
+
+  <form [formGroup]="form" (submit)="searchHero()">
+    <div class="input-container">
+      <input type="text" class="input" value="ex: Hulk" id="input-box" formControlName="name" />
+      <button class="button" id="submit-button">Pesquisar</button>
+    </div>
+  </form>
+  <div class="list"></div>
+  <div class="display-container" id="show-container"></div>
+
+  <app-loading class="loading" *ngIf="loading"></app-loading>
+
+  <div class="card-container" *ngIf="hero">
+    <div class="container-character-image">
+      <img [src]="hero?.thumbnail?.path + '.' + hero?.thumbnail?.extension" />
+    </div>
+    <div class="character-name">{{ hero?.name }}</div>
+  </div>
+
+  <div *ngIf="hero">
+    <details>
+      <summary class="hero-info">
+        Descrição
+      </summary>
+      <div>
+        <div class="character-description">{{ hero?.description }}</div>
+      </div>
+    </details>
+
+    <details>
+      <summary class="hero-info">
+        Participação em Filmes
+      </summary>
+      <div class="card-comics">
+        <div *ngFor="let dataCardInput of movies?.results">
+          <app-card-hero-movies [dataCardInput]="dataCardInput"></app-card-hero-movies>
+        </div>
+      </div>
+    </details>
+
+    <details>
+      <summary class="hero-info">
+        Participação em Quadrinhos
+      </summary>
+      <div class="card-comics">
+        <div *ngFor="let dataCardInput of comics?.results">
+          <app-card-hero [dataCardInput]="dataCardInput"></app-card-hero>
+        </div>
+      </div>
+    </details>
+  </div>
+</div>
