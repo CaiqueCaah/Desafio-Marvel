@@ -1,25 +1,32 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { HeroComponent } from './components/hero';
-import { FooterComponent } from './components/footer';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
-
-
+import { HeroSearchComponent } from './components/hero-search';
+import { CardHeroComponent } from './components/card-hero';
+import { CardHeroMoviesComponent } from './components/card-hero-movies';
+import { LoadingComponent } from './components/loading';
+import { MatSnackBarModule } from '@angular/material/snack-bar';
 
 @NgModule({
   declarations: [
     HeroComponent,
-    FooterComponent
+    HeroSearchComponent,
+    CardHeroComponent,
+    CardHeroMoviesComponent,
+    LoadingComponent,
   ],
   imports: [
     CommonModule,
     FormsModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    MatSnackBarModule,
   ],
   exports: [
     HeroComponent,
     FormsModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    MatSnackBarModule,
   ]
 })
 export class SearchHeroModule { }
