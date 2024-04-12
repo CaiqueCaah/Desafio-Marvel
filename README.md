@@ -66,4 +66,3 @@ Para contribuir com <Desafio-Marvel>, siga estas etapas:
 5. Crie a solicitação de pull.
 
 Como alternativa, consulte a documentação do GitHub em [como criar uma solicitação pull](https://help.github.com/en/github/collaborating-with-issues-and-pull-requests/creating-a-pull-request).
->>>>>>> Stashed changes
