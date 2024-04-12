@@ -38,6 +38,15 @@ button {
   background-color: #e01a38;
   color: #ffffff;
   border-radius: 0.5em;
+  transition: 0,2s;
+}
+
+button:hover {
+  outline: none;
+  border: none;
+  background-color: #f02d4a;
+  color: #ffffff;
+  border-radius: 0.5em;
 }
 
 .display-container {

@@ -27,17 +27,6 @@ export class HeroSearchComponent {
     });
   }
 
-  getHeroes(): void {
-    this.heroService.getHeroes().subscribe({
-      next: response => {
-        console.log(response);
-      },
-      error: error => {
-        console.log(error);
-      }
-    });
-  }
-
   getHeroByName(name: string): void {
     this.loading = true;
     this.heroService.getHeroByName(name).subscribe({
@@ -55,6 +44,8 @@ export class HeroSearchComponent {
       },
       error: () => {
         this.messageError = 'Não foi possivel encontrar o Heroi informado';
+        this.hero = null;
+        this.image = '';
         this.loading = false;
         this.snackBar.open(this.messageError, "Erro", { duration: 4000 });
       },
@@ -77,9 +68,6 @@ export class HeroSearchComponent {
       next: response => {
         this.comics = response.data;
       },
-      error: error => {
-        console.log(error);
-      }
     });
   }
 
@@ -88,9 +76,6 @@ export class HeroSearchComponent {
       next: response => {
         this.movies = response.data;
       },
-      error: error => {
-        console.log(error);
-      }
     });
   }
 }

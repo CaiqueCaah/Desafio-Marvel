@@ -1,13 +1,13 @@
 <div class="card">
-  <div *ngIf="dataCardInput.images?.length === 0">
+  <div *ngIf="dataCardInput?.images?.length === 0">
     <img src="https://cdn.marvel.com/u/prod/marvel/i/mg/b/40/image_not_available.jpg" />
   </div>
-  <div *ngIf="dataCardInput.images?.length > 0">
+  <div *ngIf="dataCardInput?.images?.length > 0">
     <img [src]="dataCardInput?.images[0]?.path + '.' + dataCardInput?.images[0]?.extension" />
   </div>
 
   <div>
-    <h2>{{ dataCardInput.title }}</h2>
+    <h2>{{ dataCardInput?.title }}</h2>
     <h3>{{ dataCardInput?.description}}</h3>
   </div>
 </div>
