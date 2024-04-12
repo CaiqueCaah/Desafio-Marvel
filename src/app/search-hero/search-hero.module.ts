@@ -7,6 +7,7 @@ import { CardHeroComponent } from './components/card-hero';
 import { CardHeroMoviesComponent } from './components/card-hero-movies';
 import { LoadingComponent } from './components/loading';
 import { MatSnackBarModule } from '@angular/material/snack-bar';
+import { HeroRoutingModule } from './seach-hero-rounting.module';
 
 @NgModule({
   declarations: [
@@ -21,6 +22,7 @@ import { MatSnackBarModule } from '@angular/material/snack-bar';
     FormsModule,
     ReactiveFormsModule,
     MatSnackBarModule,
+    HeroRoutingModule
   ],
   exports: [
     HeroComponent,
