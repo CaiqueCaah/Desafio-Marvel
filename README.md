@@ -1,5 +1,6 @@
 # Desafio-Marvel
 
+## Imagem da pagina
 <img src="./src/image.png" alt="Exemplo de busca">
 
 > O objetivo deste desafio é criar uma pagina onde possamos digitar e pesquisar pelo nome do super-herói(na) e a busca nos retorne as seguintes informações:
