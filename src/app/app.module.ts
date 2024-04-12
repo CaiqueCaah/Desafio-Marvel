@@ -6,7 +6,6 @@ import { AppComponent } from './app.component';
 import { SearchHeroModule } from './search-hero';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { HttpClientModule } from '@angular/common/http';
-import { HeroRoutingModule } from './search-hero/seach-hero-routing.module';
 
 @NgModule({
   declarations: [
@@ -18,7 +17,6 @@ import { HeroRoutingModule } from './search-hero/seach-hero-routing.module';
     SearchHeroModule,
     BrowserAnimationsModule,
     HttpClientModule,
-    HeroRoutingModule
   ],
   providers: [],
   bootstrap: [AppComponent]

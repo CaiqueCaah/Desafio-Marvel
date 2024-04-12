@@ -16,11 +16,11 @@ Antes de começar, verifique se você atendeu aos seguintes requisitos:
 
 - Você instalou a versão mais recente de `<Angular / Node.js>`
 - Você tem uma máquina `<Windows / Linux / Mac>`.
-- Você leu `<https://developer.marvel.com/>` e `<https://developer.marvel.com/>` Guia de utilização da API MArvel.
+- Você leu `<https://developer.marvel.com/>` e `<https://developer.marvel.com/>` Guia de utilização da API Marvel.
 
 ## 🚀 Instalando <Desafio-Marvel>
 
-Para instalar o <Desafio-Marvel>, siga estas etapas:
+Para instalar o Desafio-Marvel, siga estas etapas:
 
 Windows:
 
@@ -41,7 +41,7 @@ Baixar o Node.js
 
 ## ☕ Usando <Desafio-Marvel>
 
-Para usar <Desafio-Marvel>, siga estas etapas:
+Para usar Desafio-Marvel, siga estas etapas:
 
 ```
 Clonando o repositorio no GitHub.
@@ -53,8 +53,6 @@ ng serve
 Acessar a pagina utilizando
 <seu_localhost>/hero
 ```
-
-Adicione comandos de execução e exemplos que você acha que os usuários acharão úteis. Fornece uma referência de opções para pontos de bônus!
 
 ## 📫 Contribuindo para <Desafio-Marvel>
 
