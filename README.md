@@ -2,7 +2,7 @@
 
 <img src="imagem.png" alt="Exemplo imagem">
 
-> O objeto deste desafio é criar uma pagina onde possamos digitar pelo nome do super-herói(na) e a busca nos retorne as seguintes informações:
+> O objetivo deste desafio é criar uma pagina onde possamos digitar e pesquisar pelo nome do super-herói(na) e a busca nos retorne as seguintes informações:
   1. Nome
   2. Foto
   3. Descrição
